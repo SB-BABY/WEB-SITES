@@ -1,0 +1,104 @@
+.product {
+	margin-top: -1px;
+
+	&__top{
+		padding: 30px 30px;
+		justify-content: space-between;
+		align-items: center;
+
+		// СКОРПИОНЫ
+		&::before{
+			content: '';
+			display: block;
+			width: 256px;
+			height: 225px;
+			background-image: url('./../../IMG/02_product/scorp.svg');
+			background-repeat: no-repeat;
+			background-size: 256px 225px;
+		}
+
+		&::after{
+			content: '';
+			display: block;
+			width: 256px;
+			height: 225px;
+			background-image: url('./../../IMG/02_product/scorp2.svg');
+			background-repeat: no-repeat;
+			background-size: 256px 225px;
+		}
+	}
+
+	&__title {
+		font-size: 65px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 72.576px; /* 111.655% */
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		color: $black;
+		text-align: center;
+		max-width: 785px;
+		margin: 0 auto;
+	}
+
+	&__content{
+		margin-top: -1px;
+		padding: 20px;
+		position: relative;
+	}
+
+	&__list{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 26px;
+
+		@include tablet{
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
+	&__decor{
+		position: absolute;
+		top: 20px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		width: calc(100% - 40px);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@include tablet{
+			display: none;
+		}
+	}
+
+	&__ticker{
+		margin-top: -1px;
+		border: none;
+		border-left: 1px solid $black;
+		border-right: 1px solid $black;
+	}
+
+	&__slide{
+		font-size: 17px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 25.92px; /* 152.471% */
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		color: $black;
+		padding: 23px 0;
+	}
+
+	&__big{
+		margin-top: -1px;
+		padding: 20px;
+		img{
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+}
+

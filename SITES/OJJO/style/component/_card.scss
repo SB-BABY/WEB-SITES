@@ -1,0 +1,51 @@
+.card {
+	background-image: url("./../../IMG/02_product/bg__product.svg");
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: cover;
+	padding: 22px;
+	text-align: center;
+	min-height: 658px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	padding-top: 100px;
+
+	@include tablet{
+		min-height: 329px;
+
+		background-size: contain;
+	}
+
+	&__taste {
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 28.08px; /* 156% */
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		margin-bottom: 14px;
+	}
+
+	&__title {
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 38.016px; /* 118.8% */
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		margin-bottom: 14px;
+	}
+
+	&__image{
+		width: 100%;
+		object-fit: cover;
+		padding: 20px;
+
+		@include tablet{
+			width: 50%;
+		}
+	}
+}

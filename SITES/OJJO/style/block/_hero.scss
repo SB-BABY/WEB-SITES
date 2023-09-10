@@ -1,0 +1,48 @@
+.hero {
+	&__block {
+		// Чтобы бордер сместился
+		margin-top: -1px;
+	}
+
+	&__left {
+		width: 50%;
+		border-right: 1px solid $black;
+	}
+
+	&__slide {
+		font-size: 17px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 25.92px; /* 152.471% */
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		color: $black;
+		padding: 23px 0;
+	}
+
+	&__image {
+		padding: 20px;
+
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__right {
+		width: 50%;
+	}
+
+	&__title {
+		font-size: 58px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 64.512px; /* 111.228% */
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		color: $black;
+		text-align: center;
+		padding: 20px 80px;
+		border-bottom: 1px solid $black;
+	}
+}
